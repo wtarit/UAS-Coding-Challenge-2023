@@ -5,7 +5,7 @@ The software contains a server used to serve GPS coordinate using REST API and a
 
 `server.py` is a fastapi server used to serve GPS coordinate by calling `GET /coordinate`. 
 
-To run the server `uvicorn main:server`
+To run the server `uvicorn server:app`
 
 The server will update the GPS coordinate every one second. (if the request come in before the coordinate have been updated, the server will return old coordinate)
 
